@@ -7,3 +7,11 @@ img {
   background-repeat: repeat-y;
   background-size: 100%;
 }
+
+h1 {
+  font-family: 'PT Serif', serif;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+}

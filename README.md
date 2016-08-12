@@ -12,7 +12,7 @@ _{This test is made with a point value system based on the answers that the user
 
 * _clone from GitHub at this address: https://github.com/ElysiaAvery/track-test_
 * _Then proceed to open in Atom or equivalent._
-*_The live site can be viewed {here}(https://elysiaavery.github.io/track-test/)._
+*_The live site can be viewed here(https://elysiaavery.github.io/track-test/)._
 
 _{This test was made using Bootstrap and jQuery. The git files should already include copies of these.}_
 

@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $("form#epic-test").submit(function(event) {
     event.preventDefault();
+    var name = $('#message').attr('name');
+
+     alert(name);
+     console.log(name);
+
     var q1Answer = $("input:radio[name=options1]:checked").val();
     var q2Answer = $("input:radio[name=options2]:checked").val();
     var q3Answer = $("input:radio[name=options3]:checked").val();
