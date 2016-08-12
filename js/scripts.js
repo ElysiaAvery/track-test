@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("form#epic-test").submit(function(event) {
     event.preventDefault();
-    var q1Answer = $("input:radio[name=question1]:checked").val();
-    var q2Answer = $("input:radio[name=question2]:checked").val();
-    var q3Answer = $("input:radio[name=question3]:checked").val();
-    var q4Answer = $("input:radio[name=question4]:checked").val();
-    var q5Answer = $("input:radio[name=question5]:checked").val();
+    var q1Answer = $("input:radio[name=options1]:checked").val();
+    var q2Answer = $("input:radio[name=options2]:checked").val();
+    var q3Answer = $("input:radio[name=options3]:checked").val();
+    var q4Answer = $("input:radio[name=options4]:checked").val();
+    var q5Answer = $("input:radio[name=options5]:checked").val();
 
     var ruby = 0;
     var design = 0;
@@ -58,7 +58,7 @@ $(document).ready(function() {
     }
 
     var result = "";
-  
+
     if(ruby>drupal && ruby>design){
       result = "<h2>Ruby</h2>";
     }
