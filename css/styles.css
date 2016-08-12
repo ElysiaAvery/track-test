@@ -1,4 +1,6 @@
-
+body {
+  background-color: black;
+}
 img {
   position: fixed;
   display: block;
@@ -9,9 +11,28 @@ img {
 }
 
 h1 {
+  margin-left: 17%;
+  font-size: 50px;
+  color: #ffffe6;
+  font-family: 'PT Serif', serif;
+}
+
+h2 {
+  color: #ffffe6;
   font-family: 'PT Serif', serif;
 }
 
 h3 {
+  color: #ffffe6;
   font-family: 'Lora', serif;
+}
+
+.radio {
+  color: #ffffe6;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+button {
+  margin-left: 46%;
+  margin-right: auto;
 }
