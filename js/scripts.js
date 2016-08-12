@@ -60,13 +60,13 @@ $(document).ready(function() {
     var result = "";
 
     if(ruby>drupal && ruby>design){
-      result = "<h2>Ruby</h2>";
+      result = "<h2>Ruby and Rails might be the best option for you! This track will teach you how to build interactive web apps.</h2>";
     }
     else if(drupal>ruby && drupal>design){
-      result = "<h2>drupal</h2>";
+      result = "<h2>PHP and Drupal might be best for you! This path is great if you are detail-oriented and focused on content.</h2>";
     }
     else if(design>ruby && design>drupal){
-      result = "<h2>design</h2><div class='row'>";
+      result = "<h2>Design and CSS might be best for you! If you enjoy how applications and sites look, look no further!</h2>";
     }
     else {
       result = "<h2>You should read up on all of the programming languages and decide!</h2>";
