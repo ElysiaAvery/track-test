@@ -5,7 +5,7 @@ $(document).ready(function() {
     var q2Answer = $("input:radio[name=question2]:checked").val();
     var q3Answer = $("input:radio[name=question3]:checked").val();
     var q4Answer = $("input:radio[name=question4]:checked").val();
-    var q5Answer = $("inpur:radio[name=question5]:checked").val();
+    var q5Answer = $("input:radio[name=question5]:checked").val();
 
     var ruby = 0;
     var design = 0;
@@ -47,25 +47,26 @@ $(document).ready(function() {
     else if (q4Answer === "question4option3"){
       ruby +=3;
     }
-    if(q4Answer === "question5option1"){
+    if(q5Answer === "question5option1"){
       design +=1;
     }
-    else if (q4Answer === "question5option2"){
+    else if (q5Answer === "question5option2"){
       drupal +=2;
     }
-    else if (q4Answer === "question5option3"){
+    else if (q5Answer === "question5option3"){
       ruby +=3;
     }
-    var result = "";
 
-    if((ruby>drupal) && (ruby>design)){
+    var result = "";
+  
+    if(ruby>drupal && ruby>design){
       result = "<h2>Ruby</h2>";
     }
-    else if ((drupal>ruby) && (drupal>design)){
+    else if(drupal>ruby && drupal>design){
       result = "<h2>drupal</h2>";
     }
-    else if ((design>ruby) && (design>drupal)){
-      result = "<h2>design</h2>";
+    else if(design>ruby && design>drupal){
+      result = "<h2>design</h2><div class='row'>";
     }
     else {
       result = "<h2>You should read up on all of the programming languages and decide!</h2>";
