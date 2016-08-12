@@ -1,3 +1,9 @@
+var counter = function(question1option1 , question2option1 , question3option1 , question4option1 , question5option1 , question1option2 , question2option2 , question3option2 , question4option2 , question5option2 , question1option3 , question2option3 , question3option3 , question4option3 , question5option3) {
+  return question1option1 + question2option1 + question3option1 + question4option1 + question5option1 + question1option2 + question2option2 + question3option2 + question4option2 + question5option2 + question1option3 + question2option3 + question3option3 + question4option3 + question5option3;
+};
+
+
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -16,16 +22,19 @@ $(document).ready(function() {
     var question5option1 = parseInt($("#question5option1").val());
     var question5option2 = parseInt($("#question5option2").val());
     var question5option3 = parseInt($("#question5option3").val());
-    
-    if (question1option1 + question2option1 + question3option1 + question4option1 + question5option1) {
+    var operator
+
+    if (4 >= counter && counter >= 0) {
       $("#answer").text("It looks like you should pursue a track of Ruby and Rails!");
     }
-    else if (question1option2 + question2option2 + question3option2 + question4option2 + question5option2) {
+    else if (10 >= counter && counter >= 5) {
       $("#answer").text("You should consider the CSS and Design track!");
     }
-    else if (question1option3 + question2option3 + question3option3 + question4option3 + question5option3) {
+    else if (15 >= counter && counter >= 11) {
       $("#answer").text("The Java and Android tracks sound perfect for you!");
     }
-
+    else {
+      console.log("here");
+    };
   });
 });

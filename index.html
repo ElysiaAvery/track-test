@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jqery-3.1.0.js"></script>
+    <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Epicodus|Test</title>
   </head>
@@ -12,15 +12,27 @@
       <div class="row">
         <div class="col-md-8">
           <form>
-            <div type="number" class="form-group" id="question1">
+            <div type="text" class="form-group" id="question1">
               <h3>Do you prefer to create things that are image based, or do you prefer to work on how 'things work'?</h3>
-              <select class="form-control">
-                <option id="question1option1" value="1">I love creating images and am very attracted to the aesthetic of objects.</option>
-                <option id="question1option1" value="2">I love to learn the mechanics of objects.</option>
-                <option id="question1option1" value="3">I enjoy both the image, and how the image was made.</option>
-              </select>
+              <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>I love creating images and am very attracted to the aesthetic of objects.
+              </label>
             </div>
-            <div type="number" class="form-group" id="question2">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                I love to learn the mechanics of objects.
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                I enjoy both the image, and how the image was made.
+              </label>
+            </div>
+            </div>
+            <div type="text" class="form-group" id="question2">
               <h3>When visiting websites, what is one of your favorite aspects?</h3>
               <select class="form-control">
                 <option id="question2option1" value="1">The interactivity of them is my favorite part.</option>
@@ -28,33 +40,69 @@
                 <option id="question2option3" value="3">I am primarily focused on the content of a webpage.</option>
               </select>
             </div>
-            <div type="number" class="form-group" id="question3">
+            <div type="text" class="form-group" id="question3">
               <h3>Do you prefer to create things that are image based, or do you prefer to work on how 'things work'?</h3>
-              <select class="form-control">
-                <option id="question3option1" value="1">I love creating images and am very attracted to the aesthetic of objects.</option>
-                <option id="question3option2" value="2">I love to learn the mechanics of objects.</option>
-                <option id="question3option3" value="3">I enjoy both the image, and how the image was made.</option>
-              </select>
+              <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>I love creating images and am very attracted to the aesthetic of objects.
+              </label>
             </div>
-            <div type="number" class="form-group" id="question4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                I love to learn the mechanics of objects.
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                I enjoy both the image, and how the image was made.
+              </label>
+            </div>
+            </div>
+            <div type="text" class="form-group" id="question4">
               <h3>Do you prefer to create things that are image based, or do you prefer to work on how 'things work'?</h3>
-              <select class="form-control">
-                <option id="question4option1" value="1">I love creating images and am very attracted to the aesthetic of objects.</option>
-                <option id="question4option2" value="2">I love to learn the mechanics of objects.</option>
-                <option id="question4option3" value="3">I enjoy both the image, and how the image was made.</option>
-              </select>
+              <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>I love creating images and am very attracted to the aesthetic of objects.
+              </label>
             </div>
-            <div type="number" class="form-group" id="question5">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                I love to learn the mechanics of objects.
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                I enjoy both the image, and how the image was made.
+              </label>
+            </div>
+            </div>
+            <div type="text" class="form-group" id="question5">
               <h3>Do you prefer to create things that are image based, or do you prefer to work on how 'things work'?</h3>
-              <select class="form-control">
-                <option id="question5option1" value="1">I love creating images and am very attracted to the aesthetic of objects.</option>
-                <option id="question5option2" value="2">I love to learn the mechanics of objects.</option>
-                <option id="question5option3" value ="3">I enjoy both the image, and how the image was made.</option>
-              </select>
+              <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>I love creating images and am very attracted to the aesthetic of objects.
+              </label>
             </div>
-            <button type="submit" class="btn btn-success ">Submit</button>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                I love to learn the mechanics of objects.
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                I enjoy both the image, and how the image was made.
+              </label>
+            </div>
+              <button type="submit" class="btn btn-success ">Submit</button>
+            </div>
           </form>
-          <div id="tracks">
+          <div class="tracks">
             <h3 id="answer"></h3>
           </div>
         </div>
