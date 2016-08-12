@@ -1,37 +1,31 @@
-var counter = function(question1option1 , question2option1 , question3option1 , question4option1 , question5option1 , question1option2 , question2option2 , question3option2 , question4option2 , question5option2 , question1option3 , question2option3 , question3option3 , question4option3 , question5option3) {
-  return question1option1 + question2option1 + question3option1 + question4option1 + question5option1 + question1option2 + question2option2 + question3option2 + question4option2 + question5option2 + question1option3 + question2option3 + question3option3 + question4option3 + question5option3;
-};
-
-
 
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("form#epic-test").submit(function(event) {
     event.preventDefault();
-    var question1option1 = parseInt($("#question1option1").val());
-    var question1option2 = parseInt($("#question1option2").val());
-    var question1option3 = parseInt($("#question1option3").val());
-    var question2option1 = parseInt($("#question2option1").val());
-    var question2option2 = parseInt($("#question2option2").val());
-    var question2option3 = parseInt($("#question2option3").val());
-    var question3option1 = parseInt($("#question3option1").val());
-    var question3option2 = parseInt($("#question3option2").val());
-    var question3option3 = parseInt($("#question3option3").val());
-    var question4option1 = parseInt($("#question4option1").val());
-    var question4option2 = parseInt($("#question4option2").val());
-    var question4option3 = parseInt($("#question4option3").val());
-    var question5option1 = parseInt($("#question5option1").val());
-    var question5option2 = parseInt($("#question5option2").val());
-    var question5option3 = parseInt($("#question5option3").val());
-    var operator
+    var number1 = parseInt($("#question1option1").val());
+    var number2 = parseInt($("#question1option2").val());
+    var number3 = parseInt($("#question1option3").val());
+    var number4 = parseInt($("#question2option1").val());
+    var number5 = parseInt($("#question2option3").val());
+    var number6 = parseInt($("#question2option3").val());
+    var number7 = parseInt($("#question3option1").val());
+    var number8 = parseInt($("#question3option2").val());
+    var number9 = parseInt($("#question3option3").val());
+    var number10 = parseInt($("#question4option1").val());
+    var number11 = parseInt($("#question4option2").val());
+    var number12 = parseInt($("#question4option3").val());
+    var number13 = parseInt($("#question5option1").val());
+    var number14 = parseInt($("#question5option2").val());
+    var number15 = parseInt($("#question5option3").val());
 
-    if (4 >= counter && counter >= 0) {
-      $("#answer").text("It looks like you should pursue a track of Ruby and Rails!");
+    if (number1 + number4 + number7 + number10 + number13) {
+      $("#answer1").show();
     }
-    else if (10 >= counter && counter >= 5) {
-      $("#answer").text("You should consider the CSS and Design track!");
+    else if (number2 + number5 + number8 + number11 + number14) {
+      $("#answer2").show();
     }
-    else if (15 >= counter && counter >= 11) {
-      $("#answer").text("The Java and Android tracks sound perfect for you!");
+    else if (number3 + number6 + number9 + number12 + number15) {
+      $("#answer3").show();
     }
     else {
       console.log("here");
