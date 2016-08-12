@@ -1,34 +1,66 @@
-
 $(document).ready(function() {
   $("form#epic-test").submit(function(event) {
     event.preventDefault();
-    var number1 = parseInt($("#question1option1").val());
-    var number2 = parseInt($("#question1option2").val());
-    var number3 = parseInt($("#question1option3").val());
-    var number4 = parseInt($("#question2option1").val());
-    var number5 = parseInt($("#question2option3").val());
-    var number6 = parseInt($("#question2option3").val());
-    var number7 = parseInt($("#question3option1").val());
-    var number8 = parseInt($("#question3option2").val());
-    var number9 = parseInt($("#question3option3").val());
-    var number10 = parseInt($("#question4option1").val());
-    var number11 = parseInt($("#question4option2").val());
-    var number12 = parseInt($("#question4option3").val());
-    var number13 = parseInt($("#question5option1").val());
-    var number14 = parseInt($("#question5option2").val());
-    var number15 = parseInt($("#question5option3").val());
+    var q1Answer = $("input:radio[name=question1]:checked").val();
+    var q2Answer = $("input:radio[name=question2]:checked").val();
+    var q3Answer = $("input:radio[name=question3]:checked").val();
+    var q4Answer = $("input:radio[name=question4]:checked").val();
+    var q5Answer = $("inpur:radio[name=question5]:checked").val();
 
-    if (number1 + number4 + number7 + number10 + number13) {
-      $("#answer1").show();
+    var ruby = 0;
+    var design = 0;
+    var drupal = 0;
+
+    if(q1Answer === "question1option1") {
+      ruby += 1;
+    } else if (q1Answer === "question1option2"){
+      design +=1;
+    }else if (q1Answer === "question1option3"){
+      drupal +=1;
+
+    if(q2Answer === "question2option1") {
+      ruby += 2;
+    } else if (q2Answer === "question2option2"){
+      design +=2;
+    } else if (q2Answer === "question2option3"){
+      drupal +=2;
+
+    if(q3Answer === "question3option1") {
+      ruby += 2;
+    } else if (q3Answer === "question3option2"){
+      design +=2;
+    } else if (q3Answer === "question3option3"){
+      drupal +=2;
+
+    if(q4Answer === "question4option1") {
+      ruby += 3;
+    } else if (q4Answer === "question4option2"){
+      design += 3;
+      ruby -=2;
+    } else if (q4Answer === "question4option3"){
+      design += 3;
+
+    if(q4Answer === "question5option1") {
+      ruby += 3;
+      design -= 1;
+    } else if (q4Answer === "question5option2"){
+      design += 3;
+      ruby -=2;
+    } else if (q4Answer === "question5option3"){
+      ruby += 3;
+
+    var result = "";
+
+    if((ruby>drupal) && (ruby>design)){
+      result = "<h2>Ruby</h2>";
+    } else if ((drupal>ruby) && (drupal>design)){
+      result = "<h2>drupal</h2>";
+    } else if ((design>ruby) && (design>drupal)){
+      result = "<h2>design</h2>";
+    } else {
+      result = "<h2>You should read up on all of the programming languages and decide!</h2>";
     }
-    else if (number2 + number5 + number8 + number11 + number14) {
-      $("#answer2").show();
-    }
-    else if (number3 + number6 + number9 + number12 + number15) {
-      $("#answer3").show();
-    }
-    else {
-      console.log("here");
+      $("#results").html(result);
     };
   });
 });
